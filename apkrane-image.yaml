@@ -8,7 +8,7 @@ contents:
     - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
     - melange.rsa.pub
   packages:
-    - apkrane
+    - apkrane@local
 
 entrypoint:
   command: /usr/bin/apkrane
