@@ -32,7 +32,7 @@ jobs:
         run: echo "${MELANGE_KEY}" > melange.rsa
 
       - name: Build package with Melange
-        uses: chainguard-dev/actions@main
+        uses: chainguard-dev/actions/melange-build-pkg@main
         with:
           config: apkrane-package.yml
           archs: x86_64
