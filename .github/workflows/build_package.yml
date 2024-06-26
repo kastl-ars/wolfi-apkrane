@@ -40,3 +40,10 @@ jobs:
           config: apkrane-package.yml
           archs: x86_64
           sign-with-key: true
+
+      # https://github.com/chainguard-images/actions/tree/main/apko-publish
+      - name: Build image with Apko
+        uses: chainguard-images/actions/apko-publish@main
+        with:
+          config: apkrane-image.yaml
+          tag: ghcr.io/kastl-ars/wolfi-apkrane:latest ghcr.io/kastl-ars/wolfi-apkrane:0.0.1
